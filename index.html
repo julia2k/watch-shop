@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link href="style.css" rel="stylesheet">
+	<link href="icons/favicon.ico" rel="icon" type="image/x-icon" />
+	<title>WatchShop</title>
+</head>
+<body>
+	<header>
+		<ul class="left">
+			<li>EN</li>
+			<li>DE</li>
+			<li>FR</li>
+		</ul>
+		<ul class="right">
+			<li onclick="openLoginForm()">LOGIN</li>
+			<li onclick="openRegisterForm()">REGISTER</li>
+			<li onclick="openCart()">CART</li>
+		</ul>
+		<nav>
+
+			<p>Diamonde</p>
+			<button id="cart-sm-button" onclick="openCart()">&#128722</button>
+<!---------menu-burger-for mediascreen 600px--------------------->
+<div class="wrapperBurger">
+	
+			<div class="overlay">
+		        <ul class="overlayMenu">
+		            <li><a href=#>Lorem.</a></li>
+		            <li><a href=#>Inventore.</a></li>
+		            <li><a href=#>Ipsum.</a></li>
+		            <li><a href=#>Doloribus.</a></li>
+		            <li><a href=#>Inventore!</a></li>
+		        </ul>
+   			 </div>
+			<div class="burger" id="burgerToggle"></div>
+</div>
+
+			<hr>
+			<ul class="mainMenu">
+				<li>Lorem.</li>
+				<li>Inventore.</li>
+				<li>Ipsum.</li>
+				<li>Doloribus.</li>
+				<li>Inventore!</li>
+			</ul>
+			
+		</nav>
+		
+
+
+		<div id="dark"></div>
+		<!--------------\\\\\ LOGIN FORM  ///////--------------------->
+		<div id="login">
+			<div class="form-header">
+				<h2>Login</h2>
+				<button  class= "closeButton" onclick="closeLoginForm()"> &#10007 </button>
+			</div>
+			<form>
+				<fieldset>
+				   
+				     <input type="text" name="name" placeholder="E-mail" required> 
+				     <input type="password" name="surname" placeholder="Password" required>
+				 </fieldset>
+					<button >Enter</button>
+			</form>	
+		</div>
+		<!--------------\\\\\ REGISTER FORM  ///////--------------------->
+		<div id="register">
+			<div class="form-header">
+				<h2>Register</h2>
+				<button  class= "closeButton" onclick="closeRegisterForm()"> &#10007 </button>
+			</div>
+		
+			<form>
+				<fieldset>
+				   <!-- <legend>Получатель</legend> -->
+				    <input type="text" name="name" placeholder="First name"> <br/>
+				    <input type="text" name="surname" placeholder="Second name"> <br/>
+				    <input type="email" name="emailaddress" placeholder="Email"> <br/>
+					<input type="tel" name="phone" placeholder="Phone number"> <br/>
+					<input type="password" name="surname" placeholder="Password" required><br/>
+					<input type="password" name="surname" placeholder="Confirm password" required>
+				</fieldset>
+				<button>Confirmation</button>
+			</form>
+		</div>
+
+
+		<!--------------\\\\\\   CART  ///////--------------------->
+		<div id="cart">
+			<div class="form-header">
+				<h2>Cart</h2>
+				<button  class=" closeButton" onclick="closeCart()"> &#10007 </button>
+			</div>
+			<div class="wrap-cart-table">
+				<table class="clear">
+					<tr>
+						<th class="d-xs-none">#</th>
+						<th>Image</th>
+						<th class="d-xs-none">Product</th>
+						<th>Price</th>
+						<th>Amount</th>
+						<th >Sum</th>
+						<th></th>
+					</tr>
+					
+					<tr>
+						<td colspan="7">Total <strong></strong></td>
+					</tr>
+				</table>
+				<button>Continue to checkout</button>	
+			</div>
+
+			<!--<h3>Оформление заказа</h3>
+			<form>
+				<fieldset>
+				   <legend>Получатель</legend>
+				    <input type="text" name="name" placeholder="имя"> 
+				    <input type="text" name="surname" placeholder="фамилия">
+				    <input type="tel" name="phone" placeholder="контактній номер телефона"> 
+				</fieldset>
+				<fieldset>
+					<legend>Delivery</legend>
+				    <select>
+					   	<option>Нова </option> 
+					   	<option>Укрпочта</option> 
+					   	<option>Доставка на дом</option> 
+				   </select>
+				   <input type="text" name="City" placeholder="город"> 
+				   <input type="text" name="adress" placeholder="Адрес/номер отделения">
+				   <textarea placeholder= "Доп инфо"></textarea>  
+				</fieldset>
+					<fieldset>
+					   <legend>Оплата</legend>
+					   <select>
+						   <option>Приват24</option> 
+						   <option>Visa/MC/Ligpay</option> 
+						   <option>На отделении</option> 
+					   </select>
+					</fieldset>
+					<button>Оформить заказ</button>
+					</form>
+
+			-->
+			
+		</div>
+
+
+	</header>
+
+
+<!--------------\\\\\\  Section main foto  //////---------------------->
+	<section id="top">
+		<p>EXCLUSIVE</p>
+		<p>WATCHES</p>
+		<button class="btnHoverShy" >BROWSE</button>
+	</section>
+
+
+<!-----------\\\\\\  Section first-block-foto //////---------------------->
+	<section class=" shadow-text container-flex">
+		<article id="first-block-foto1" class="promo radius ">
+			<div class="black-layer ">
+				<header>sint occaecat cupidatat</header>
+				<button class="btnHoverShy">DETAILS...</button>	
+			</div>
+		</article>
+		<article id="first-block-foto2" class="promo radius">
+			<div class="black-layer">
+				<header>sint occaecat cupidatat</header>
+				<button class="btnHoverShy">DETAILS...</button>
+			</div>
+		</article>
+		<article id="first-block-foto3" class="promo radius">
+			<div class="black-layer">
+				<header>sint occaecat cupidatat</header>
+				<button class="btnHoverShy">DETAILS...</button>
+			</div>
+		</article>
+	</section>
+
+
+
+
+	<section class="container blackline  radius">
+		<p>new products</p>
+	</section>
+
+
+
+
+	<!-----------\\\\\\  section PRODUCT 1-line  //////---------------->
+	<section class="container-flex">
+		<article class="promo20  radius">
+			<div class="foto">
+				<img id="img101" src="img/100.jpg" />
+			 </div>
+			<div class='item-description'>
+				<p>Product Name1</p>
+				<p>$1999.00</p>	
+				<p>$1049.00</p>
+				<button data-id="100">Add to card</button>
+			</div>
+		</article>
+			
+		<article class="promo20  radius">
+			<div class="foto"> <img id="img101" src="img/101.jpg"> </div>
+			<div class='item-description'>
+				<p>Product Name2</p>
+				<p>$1999.00</p>	
+				<p>$1549.00</p>	
+				<button data-id="101">Add to card </button>
+			</div>
+		</article>
+		<article class="promo20  radius">
+			<div class="foto"> <img id="img102" src="img/102.jpg"> </div>
+			<div class='item-description'>
+				<p>Product Name3</p>
+				<p>$1999.00</p>	
+				<p>$122.00</p>	
+				<button data-id="102">Add to card</button>
+			</div>
+		</article>
+		<article class="promo20 radius">
+			<div class="foto"> <img id="img103" src="img/103.jpg"> </div>
+			<div class='item-description'>
+				<p>Product Name4</p>
+				<p>$1999.00</p>	
+				<p>$1555.00</p>	
+				<button data-id="103">Add to card</button>
+			</div>
+		</article>
+	</section>
+	
+
+
+
+
+	<!------------------\\\\\\  section ring+making //////---------------------->
+	<section class="container-flex shadow-text">
+		<article id="making" class="promo50 radius">
+			<div class="black-layer">
+				<p> deserunt mollit anim</p>
+				<button class="btnHoverShy">Details...</button>
+			</div>
+		</article>
+
+		 <article id="ring" class="promo50 radius">
+			<div class="black-layer">	
+				<p> deserunt mollit anim</p>
+				<button class=" btnHoverShy">Details...</button>
+			</div>		
+		</article> 
+	</section>
+
+
+
+
+	<section class="container blackline radius">
+		<p>specials</p>
+	</section>
+
+
+
+<!-----------\\\\\\  section PRODUCT 2-line  //////---------------->
+	<section class="container-flex">
+		<article class="promo20  radius">
+			<div class="foto">
+
+
+			<img id="img200"src="img/200.jpg" ></div>
+			<div class='item-description'>
+				<p>Product_Name_5</p>
+				<p>$1999.00</p>	
+				<p>$1099.00</p>	
+				<button data-id="200">Add to card</button>
+			</div>
+		</article>
+			
+		<article class="promo20 radius">
+			<div class="foto"><img id="img201" src="img/201.jpg"></div>
+			<div class='item-description'>
+				<p>Product_Name_6</p>
+				<p>$1999.00</p>	
+				<p>$1749.00</p>	
+				<button data-id="201">Add to card</button>
+			</div>
+		</article>
+		<article class="promo20 radius">
+			<div class="foto"><img id="img202" src="img/202.jpg"></div>
+			<div class='item-description'>
+				<p>Product_Name_7</p>
+				<p>$1999.00</p>	
+				<p>$19.00</p>	
+				<button data-id="202">Add to card</button>
+			</div>
+		</article>
+		<article class="promo20 radius">
+			<div class="foto"><img id="img203" src="img/203.jpg"></div>
+			<div class='item-description'>
+				<p>Product_Name_8</p>
+				<p>$1999.00</p>	
+				<p>$1149.00</p>	
+				<button data-id="203">Add to card</button>
+			</div>
+		</article>
+	</section>
+
+
+	<footer>
+		<div class="container-flex">
+				<div class="promo20 left-text-align white-text">
+					<p>CONTACT DATA</p>
+					<p id="logo"></p>
+					<p>1355 Market Street, Suite 900</p>
+					<p>San Francisco, CA 94103</p>
+					<p>(123) 456-7890</p>
+				</div>
+
+				<div class="promo15 left-text-align white-text mt-0 d-md-none">
+					<p>INFORMATION</p>
+					<ul>
+						<li>loren ipsum</li>
+						<li>loren ipsum</li>
+						<li>loren ipsum</li>
+						<li>loren ipsum</li>
+					</ul>
+				</div>		
+				<div class="promo15 left-text-align white-text mt-0 d-md-none">
+					<p>TOP CATEGORIES</p>
+					<ul>
+						<li>loren ipsum</li>
+						<li>loren ipsum</li>
+						<li>loren ipsum</li>
+						<li>loren ipsum</li>
+					</ul>
+				</div>
+				<div class="promo15 left-text-align white-text mt-0 d-md-none">
+					<p>ACCOUNT</p>
+					<ul>
+						<li>loren ipsum</li>
+						<li>loren ipsum</li>
+						<li>loren ipsum</li>
+						<li>loren ipsum</li>
+					</ul>
+				</div>
+				<div class="wrap-footer-menu-768 ">
+					<div class="footer-menu-768 left-text-align white-text">
+						<ul>
+							<li><a href="#">INFORMATION</a></li>
+							<li><a href="#">TOP CATEGORIES</a></li>
+							<li><a href="#">ACCOUNT</a></li>
+						</ul>
+
+
+					</div>
+					<div class="promo20-2 left-text-align white-text">
+						<p>STAY IN TOUCH</p>
+						<input type="tel" pattern="+38-[0-9]{3}-[0-9]{7}">
+					</div>
+				</div>
+		</div>
+	</footer>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="newScript.js"></script>
+</body>
+</html>
