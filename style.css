@@ -20,6 +20,9 @@
 	color: white;
 
 }
+ul {
+	list-style: none;
+}
 html, body {
 	margin:0;
 	padding: 0;
@@ -282,7 +285,7 @@ article.promo20{
 }
 footer{
 	background: black;
-	min-height: 250px;
+	/*min-height: 250px;*/
 	width: 100%;
   	margin-bottom: 0; 
 }
@@ -481,7 +484,7 @@ table tr:nth-child(even){
 		font-size: 25px;
 		margin-top: 20%;
 	}
-	.d-md-none{
+	.d-md-none, .footer-menu-768 li:last-child{
 		display: none;
 	}
 	.wrap-footer-menu-768{
@@ -490,7 +493,6 @@ table tr:nth-child(even){
 	}
 	.footer-menu-768{
 		display:block;
-		height: 100px;
 		color: DarkGoldenRod;
 
 	}
@@ -528,10 +530,12 @@ table tr:nth-child(even){
 	#cart-sm-button{
 	  	right: 70px;
 	 }
-	.wrapperBurger,  #cart-sm-button{
+	.wrapperBurger,  #cart-sm-button, .footer-menu-768 li:last-child{
 	 	display:block !important;
 	}
-
+	.footer-menu-768  li input{
+		margin-left: 20px ;
+	}
 	.promo20{
 	 	width:100%;
 	 	height: 180px;
@@ -540,10 +544,16 @@ table tr:nth-child(even){
 	 	padding: 15px;
 	 	box-sizing: border-box;
 	}
-	footer .promo20 {
-		width: 200px;
-		display: block;
-		padding: 0;
+	footer {
+		height: auto;
+	}
+	footer .container-flex{
+		padding: 0 20px;
+		justify-content: flex-start;
+		height: auto;
+	}
+	footer .promo20, .promo20-2 {
+		display: none;
 	}
 	.foto{
 		height: 150px;
@@ -590,7 +600,7 @@ table tr:nth-child(even){
 	.d-xs-none{
 		display: none;
 	}
-	.promo header{
+	.promo header, .promo50 p{
 		font-size: 15px;
 		margin:0;
 		display:inline-block;	
@@ -598,7 +608,7 @@ table tr:nth-child(even){
 	.promo button, .promo50 button{
 		width: 100px;
 		height: 25px;
-		margin-left:s40px;	
+		margin-left:40px;	
 	}
 
 }
@@ -698,7 +708,7 @@ table tr:nth-child(even){
 		border: 1px solid #29220A;
 		width: 60vw;
 		height: 12vh;
-		margin: 6vh auto;
+		margin: 4vh auto;
 		text-align: center;
 		line-height: 12vh;
      
