@@ -108,7 +108,7 @@ header hr {
 
 #top {
 	margin-top: 105px;
-	background: url(img/w1.jpg);
+	background: url("../img/w1.jpg");
 	width: 100%;
 	height: 100vh;
 	color: white;
